@@ -7,5 +7,6 @@ public enum Mnemonique {
 	PRN,INN,
 	INT,LDI,LDA,BRN,BZE,
 	LDV,
-	STO,HLT;
+	STO,HLT,
+	NUM,EOF;
 }

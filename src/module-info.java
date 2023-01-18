@@ -1,0 +1,2 @@
+module mips1Proj {
+}

@@ -36,7 +36,7 @@ public class ParserWS extends Parser {
 
 	public void TESTE_INSERE(Tokens t,Classe_Idf c,CodesErr e) throws IOException, Erreur_Compilation {
 		 if(getScan().getSymbCour().getToken()==t)
-		 {
+		 {	 
 			 ((ScannerWS)getScan()).CHERCHER_SYMB();
 				if (((ScannerWS)getScan()).getPlaces_Symb()!=-1)
 					throw new Erreur_Semantique(CodesErr.DBL_DECL_ERR);
@@ -69,7 +69,6 @@ public class ParserWS extends Parser {
 		Instruction inst=new Instruction();
 		inst.setMne(M);
 		pcode.add(inst);
-	
 	}
 	public void generer2(Mnemonique M,int x) {
 		pcode.add(new Instruction(M,x));
